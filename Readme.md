@@ -51,7 +51,13 @@ console.log("hello world")
     console.log(num)
   }
 
-  foo(10)
+  foo(10) // 10
+
+  // Default paramaters
+  function boo(num = 5) {
+    console.log(num);
+  }
+  boo() // 5
 ```
 
 ## Return Values
@@ -86,7 +92,26 @@ They can be written as one-liners that return a value without using the `return`
 
 ### Conditions
 
-JavaScript uses if / else if / else statements to run different code depending on conditions.
+JavaScript uses **if / else if / else** statements to run different code depending on logical conditions.  
+If \_**\_ is true, do this; else, do \_\_**.
+
+Imagine being at a crossroads.  
+A condition asks if something is true.  
+For example, if you are hungry, you’ll go down the road to your favorite café; otherwise, you’ll head down the road home.
+
+**Comparison and logical operators:**
+
+- `==` – equal to (1 == "1" is true)
+- `===` – strict equal to (1 == "1" is false)
+- `!=` – not equal to
+- `!==` – strict not equal to
+- `<` – less than
+- `>` – greater than
+- `<=` – less than or equal to
+- `>=` – greater than or equal to
+- `&&` – logical AND (both conditions must be true)
+- `||` – logical OR (at least one condition must be true)
+- `!` – logical NOT (reverses the truthiness of a condition)
 
 ```
   if (condition) {
@@ -103,11 +128,14 @@ JavaScript uses if / else if / else statements to run different code depending o
 
   if (num1 + num2 === 3) {
     console.log("Number is 3");
+
   } else if (num1 + num2 > 3) {
     console.log("Number is greater than 3");
+
   } else {
     console.log("Number is less than 3");
-  }
+
+  };
 ```
 
 Conditional statements can also be written in shorthand when the action fits on a single line.
@@ -115,18 +143,21 @@ Conditional statements can also be written in shorthand when the action fits on 
 ```
 // Single-line if statement
 // If the name is "rose", immediately return the string "hello rose"
-let name = "rose"
-if (name === "rose") return "hello rose"
+
+  let name = "rose"
+  if (name === "rose") return "hello rose"
 
 // Logical AND (&&) shorthand
 // If darkMode is true, this will print "Dark Mode On" to the console
-let darkMode = true
-darkMode && console.log("Dark Mode On")
+
+  let darkMode = true
+  darkMode && console.log("Dark Mode On")
 
 // Ternary operator
 // If age is greater than 21, print the first message; otherwise, print the second message
-let age = 21
-age > 21 ? console.log("You can get into the club") : console.log("Sorry you're too young")
+
+  let age = 21
+  age > 21 ? console.log("You can get into the club") : console.log("Sorry you're too young")
 
 
 ```
@@ -198,16 +229,21 @@ Create a function `calculate(a, b, operation)`
 function calculate(a, op, b) {
   if (op === "+") {
     return add(a, b);
+
   } else if (op === "-") {
     return subtract(a, b);
+
   } else if (op === "\*") {
     return multiply(a, b);
+
   } else if (op === "/") {
     return divide(a, b);
+
   } else {
     return "Unknown operator";
-  }
-}
+
+  };
+};
 
 console.log(calculate(10, "+", 5)); // 15
 console.log(calculate(10, "/", 2)); // 5

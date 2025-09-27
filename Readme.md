@@ -109,6 +109,7 @@ That's a bit how Conditionals work.
 ```
 
 **Comparison and logical operators:**
+These are logical operations that are paired with your if/else statments. 
 
 - `==` – equal to (1 == "1" is true)
 - `===` – strict equal to (1 == "1" is false)

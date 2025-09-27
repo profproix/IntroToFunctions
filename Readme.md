@@ -27,7 +27,7 @@ A function is a reusable block of code. You define it once and call it many time
 
 ### Hoisting
 
-- Function declarations with the function keyword are hoisted. Which means you can actually call the function before it's defined.
+- Function declarations with the function keyword are [hoisted](https://www.youtube.com/watch?v=EvfRXyKa_GI). Which means you can actually call the function before it's defined.
 
 - Functions saved to variables and arrow functions are not hoisted the same way.
 

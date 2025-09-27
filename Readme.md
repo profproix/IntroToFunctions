@@ -101,8 +101,8 @@ For example, if you are hungry, you’ll go down the road to your favorite café
 That's a bit how Conditionals work.
 
 ```
-         [Start]
-            |
+              [Start]
+                 |
   [no] <--[Condition True?]--> [yes]
    |                             |
 [Do Nothing]             [Perform Action]

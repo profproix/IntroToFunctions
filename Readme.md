@@ -98,6 +98,15 @@ If \_**\_ is true, do this; else, do \_\_**.
 Imagine being at a crossroads.  
 A condition asks if something is true.  
 For example, if you are hungry, you’ll go down the road to your favorite café; otherwise, you’ll head down the road home.
+That's a bit how Conditionals work.
+
+```
+         [Start]
+            |
+  [no] <--[Condition True?]--> [yes]
+   |                             |
+[Do Nothing]             [Perform Action]
+```
 
 **Comparison and logical operators:**
 
